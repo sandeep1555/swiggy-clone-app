@@ -1,0 +1,25 @@
+{
+  "name": "swiggy-clone",
+  "version": "1.0.0",
+  "description": "swiggy clone",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep1555/swiggy-clone-app.git"
+  },
+  "keywords": [
+    "swiggy"
+  ],
+  "author": "sandeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeep1555/swiggy-clone-app/issues"
+  },
+  "homepage": "https://github.com/sandeep1555/swiggy-clone-app#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
