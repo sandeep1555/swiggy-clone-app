@@ -2,9 +2,10 @@
   "name": "swiggy-clone",
   "version": "1.0.0",
   "description": "swiggy clone",
-  "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start":"parcel swiggy.html",
+    "build":"parcel build swiggy.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,11 @@
   },
   "homepage": "https://github.com/sandeep1555/swiggy-clone-app#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
