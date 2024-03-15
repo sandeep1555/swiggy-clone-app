@@ -1,0 +1,1 @@
+export const LOGO_URL="https://logowik.com/content/uploads/images/free-food-delivery8485.logowik.com.webp";

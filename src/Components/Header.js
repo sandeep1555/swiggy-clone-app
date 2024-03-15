@@ -1,9 +1,11 @@
+import { LOGO_URL } from "../Utils/constants"
+
 const Header=()=>
 {
     return (
         <div className="Header">
     <div className="logo-container">
-        <img  className="logo" src="https://logowik.com/content/uploads/images/free-food-delivery8485.logowik.com.webp"/>
+        <img  className="logo" src={LOGO_URL}/>
     </div>
 
     <div className="nav-items">

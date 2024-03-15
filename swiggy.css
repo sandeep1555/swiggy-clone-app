@@ -49,3 +49,26 @@ width:150px;
 
     padding: 10px;
 }
+
+.shimmer-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-box
+{
+    background-color: #d1cfcf;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+.shimmer-button
+{
+    margin: 10px;
+    width: 150px;
+    height: 20px;
+    background-color: #d1cfcf;
+}

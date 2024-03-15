@@ -3,7 +3,7 @@ const RestaurantCard=(props)=>
 {
     const {resData}=props;
     const {name, cuisines,deliveryTime,avgRating, 
-        cloudinaryImageId }=resData?.data;
+        cloudinaryImageId }=resData.info;
     return(
     <div className="res-card">
         <img className="res-img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
