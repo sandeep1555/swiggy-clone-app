@@ -4,8 +4,8 @@
   "description": "swiggy clone",
   "scripts": {
     "test": "jest",
-    "start":"parcel swiggy.html",
-    "build":"parcel build swiggy.html"
+    "start": "parcel swiggy.html",
+    "build": "parcel build swiggy.html"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
   }
 }
