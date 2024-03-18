@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import  ReactDOM  from "react-dom/client";
 import Body from "./src/Components/Body";
 import Header from "./src/Components/Header";
@@ -7,6 +7,10 @@ import Contact from "./src/Components/Contact";
 import About from "./src/Components/About";
 import Error from "./src/Components/Error";
 import RestaurantMenu from "./src/Components/RestaurantMenu";
+import Shimmer from "./src/Components/Shimmer";
+
+
+const Instamart= lazy(()=>import("./src/Components/Instamart"))
 
   const AppLayout = () => {
     return (
@@ -38,7 +42,11 @@ import RestaurantMenu from "./src/Components/RestaurantMenu";
         {
           path:"/restaurant/:resId",
           element:<RestaurantMenu/>
-        }
+        },
+        {
+          path:"/instamart",
+          element:<Suspense fallback={<Shimmer/>}><Instamart/></Suspense>,
+        },
       ]
     }
   ])

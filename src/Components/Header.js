@@ -18,6 +18,7 @@ const Header=()=>
              <li><Link  to="/about">About Us</Link></li>
              <li><Link  to="/contact">Contact us</Link></li>
              <li><Link >Cart</Link></li>
+             <li><Link to="/instamart">Instamart</Link></li>
         </ul>
     </div>
     </div>
