@@ -1,3 +1,4 @@
+import { CDN_URL } from "../Utils/constants";
 
 const RestaurantCard=(props)=>
 {
@@ -5,12 +6,15 @@ const RestaurantCard=(props)=>
     const {name, cuisines,deliveryTime,avgRating, 
         cloudinaryImageId }=resData.info;
     return(
-        <div class=" w-[275px] bg-gray-300 m-5">
-    <div class=" ">
-        <img class="w-[250px] h-[175px] p-2" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+        <div className="m-5 w-[300px] flex flex-col items-center  bg-gray-300 p-5">
+    
+        <div className="">
+        <img className="w-[200px] h-[150px] " src={ CDN_URL+
 cloudinaryImageId}/>
+</div>
+<div className="text-center ">
         <h3>{name}</h3>
-        <h4>{cuisines}</h4>
+        <h4 className="max-w-[200px]">{cuisines.join(",")}</h4>
         <h4>{avgRating}</h4>
         <h4>{deliveryTime}</h4>
         </div>
@@ -26,6 +30,7 @@ export const  withPromotedLabel=(RestaurantCard)=>
         return (<div>
             <label>Promoted</label>
             <RestaurantCard {...props}/>
+    
         </div>)
     }
 }

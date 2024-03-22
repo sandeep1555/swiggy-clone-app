@@ -1,4 +1,4 @@
-import { Suspense,lazy } from "react"
+import { Suspense,lazy, useState } from "react"
 import  ReactDOM  from "react-dom/client";
 import Body from "./src/Components/Body";
 import Header from "./src/Components/Header";
@@ -8,15 +8,25 @@ import About from "./src/Components/About";
 import Error from "./src/Components/Error";
 import RestaurantMenu from "./src/Components/RestaurantMenu";
 import Shimmer from "./src/Components/Shimmer";
+import UserContext from "./src/Utils/userContext";
 
 
 const Instamart= lazy(()=>import("./src/Components/Instamart"))
 
+
   const AppLayout = () => {
+
+
+    const [newUsername,setnewUsername]=useState("");
+
+
     return (
+
         <div>
+     
      <Header/>
-     <Outlet/>
+     <Outlet/> 
+     
      </div>
     );
   };
