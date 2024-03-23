@@ -19,8 +19,6 @@ if(resInfo===null) return <Shimmer />;
 const  category = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter((c)=>c.card?.card?.["@type"]===
 "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
 
-console.log(itemCards);
-console.log(category);
 
    return(
    <div className="text-center  flex flex-col items-center bg-gray-50 ">

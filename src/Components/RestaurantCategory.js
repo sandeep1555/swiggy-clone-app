@@ -17,7 +17,7 @@ const RestaurantCategory=({data,Showitems,setshowList})=>
             </div>
 
 
-            {Showitems&& <ItemList  item={data.itemCards}/>}
+            {Showitems&& <ItemList  items={data.itemCards}/>}
         </div>
     )
 }

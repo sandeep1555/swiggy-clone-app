@@ -9,6 +9,9 @@ import Error from "./src/Components/Error";
 import RestaurantMenu from "./src/Components/RestaurantMenu";
 import Shimmer from "./src/Components/Shimmer";
 import UserContext from "./src/Utils/userContext";
+import { Provider } from "react-redux";
+import appStore from "./src/Utils/appStore";
+import Cart from "./src/Components/Cart";
 
 
 const Instamart= lazy(()=>import("./src/Components/Instamart"))
@@ -23,9 +26,10 @@ const Instamart= lazy(()=>import("./src/Components/Instamart"))
     return (
 
         <div>
-     
+     <Provider store={appStore}>
      <Header/>
      <Outlet/> 
+     </Provider>
      
      </div>
     );
@@ -56,6 +60,10 @@ const Instamart= lazy(()=>import("./src/Components/Instamart"))
         {
           path:"/instamart",
           element:<Suspense fallback={<Shimmer/>}><Instamart/></Suspense>,
+        },
+        {
+          path:"/cart",
+          element:<Cart/>,
         },
       ]
     }
