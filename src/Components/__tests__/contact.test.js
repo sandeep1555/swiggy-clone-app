@@ -20,14 +20,16 @@ test("should be a input in contact",()=>
 {
     render(<Contact/>)
 
-    const input=screen.getByPlaceholderText("Enter name");
+    const input=screen.getByPlaceholderText("Enter Name");
     expect(input).toBeInTheDocument();
 })
 
-test("should be a button in contact",()=>
+
+
+it("should be  2 inputs in contact",()=>
 {
     render(<Contact/>)
 
-    const input=screen.getByRole("textbox");
-    expect(input).toBeInTheDocument();
+    const input=screen.getAllByRole("textbox");
+    expect(input.length).toBe(2);
 })

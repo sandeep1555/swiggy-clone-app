@@ -1,16 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1711710919184" clover="3.2.0">
-  <project timestamp="1711710919185" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
-    <file name="Contact.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/Contact.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="4" type="stmt"/>
-    </file>
-    <file name="sum.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/sum.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
-    </file>
+<coverage generated="1712167698199" clover="3.2.0">
+  <project timestamp="1712167698199" name="All files">
+    <metrics statements="37" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="14" coveredmethods="8" elements="55" coveredelements="41" complexity="0" loc="37" ncloc="37" packages="2" files="9" classes="9"/>
+    <package name="Components">
+      <metrics statements="21" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="6"/>
+      <file name="Contact.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/Contact.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="Header.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/Header.js">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="4" type="stmt"/>
+      </file>
+      <file name="RestaurantCard.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/RestaurantCard.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="sum.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Components/sum.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Utils">
+      <metrics statements="16" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+      <file name="appStore.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Utils/appStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="cartSlice.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Utils/cartSlice.js">
+        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="constants.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Utils/constants.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="useOnlineStatus.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Utils/useOnlineStatus.js">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+      </file>
+      <file name="userContext.js" path="/Users/sandeepdasari/Desktop/swiggy-clone/src/Utils/userContext.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
